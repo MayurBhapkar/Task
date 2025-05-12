@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle & Save</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bundle-container">
+        <h1>Bundle & Save</h1>
+        
+        <div class="bundle-option " id="option1" onclick="selectOption(1)">
+            <div class="option-header">
+                <label class="radio-container">
+                    <input type="radio" name="bundle" value="1" checked>
+                    <span class="checkmark"></span>
+                    <span class="option-title">1 Pair</span>
+                </label>
+                <span class="option-price">DKK 195.00</span>
+            </div>
+            <div class="discount-badge">50% OFF</div>
+            
+            <div class="size-color-container">
+                
+                <div class="size-color-title-size">Size</div>
+                <div class="size-color-title">Colour</div>
+                
+                
+                  
+                <div class="size-color-item">
+                    <div class="item-number">#1</div>
+                    <select class="size-select">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <select class="color-select">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+
+                <div class="size-color-item">
+                    <div class="item-number">#2</div>
+                    <select class="size-select">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <select class="color-select">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="bundle-option popular" id="option2" onclick="selectOption(2)">
+            <div class="option-header">
+                <label class="radio-container">
+                    <input type="radio" name="bundle" value="2">
+                    <span class="checkmark"></span>
+                    <span class="option-title">2 Pair</span>
+                </label>
+                <span class="option-price">DKK 345.00</span>
+            </div>
+            <div class="price-difference">DKK -195.00</div>
+            <div class="popular-badge">Most Popular</div>
+            <div class="discount-badge">40% OFF</div>
+            
+            <div class="size-color-container">
+                <div class="size-color-title-size">Size</div>
+                <div class="size-color-title">Colour</div>
+                
+                <div class="size-color-item">
+                    <div class="item-number">#1</div>
+                    <select class="size-select">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <select class="color-select">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+                
+                <div class="size-color-item">
+                    <div class="item-number">#2</div>
+                    <select class="size-select">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <select class="color-select">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="bundle-option " id="option3" onclick="selectOption(3)">
+            <div class="option-header">
+                <label class="radio-container">
+                    <input type="radio" name="bundle" value="3">
+                    <span class="checkmark"></span>
+                    <span class="option-title">3 Pair</span>
+                </label>
+                <span class="option-price">DKK 528.00</span>
+            </div>
+            <div class="discount-badge">60% OFF</div>
+            
+            <div class="size-color-container">
+                <div class="size-color-title-size">Size</div>
+                <div class="size-color-title">Colour</div>
+                
+                <div class="size-color-item">
+                    <div class="item-number">#1</div>
+                    <select class="size-select">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <select class="color-select">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+                
+                <div class="size-color-item">
+                    <div class="item-number">#2</div>
+                    <select class="size-select">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <select class="color-select">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+        <div class="shipping-info">
+            <span class="free-shipping">Free 2 Day Shipping</span>
+            <span class="total-price">Total: <span id="totalAmount">DKK 195.00</span></span>
+        </div>
+
+        <button class="add-to-cart">+ Add to Cart</button>
+
+        <div class="footer">© Powered by Pumper</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
